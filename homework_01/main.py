@@ -22,7 +22,7 @@ EVEN = "even"
 PRIME = "prime"
 
 def is_prime(num):
-    if num in (0,1):  # не являются простыми числами
+    if num > 1:  # не являются простыми числами
         return False
     div_lst = list(filter(lambda x: num % x ==0 , [i for i in range(2,num)]))
     if len(div_lst)>0:
