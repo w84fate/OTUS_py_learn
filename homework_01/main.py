@@ -41,17 +41,14 @@ def filter_numbers(num_list, ftype):
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
-    try:
-        if ftype == ODD:
-            return list(filter(lambda x: x%2 != 0, num_list))
-        elif ftype == EVEN:
-            return list(filter(lambda x: x%2 == 0, num_list))
-        elif ftype == PRIME:
-            return list(filter(is_prime, num_list))
-        else:
-            raise NameError('Wrong filter param, use default constants')
-    except NameError:
-        raise
+    if ftype == ODD:
+        return list(filter(lambda x: x%2 != 0, num_list))
+    elif ftype == EVEN:
+        return list(filter(lambda x: x%2 == 0, num_list))
+    elif ftype == PRIME:
+        return list(filter(is_prime, num_list))
+    else:
+        raise NameError('Wrong filter param, use default constants')
 
 if __name__ == '__main__':
     print('Homework 1')
