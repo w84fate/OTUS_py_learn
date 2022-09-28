@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     v = Vehicle(fuel = 100, fuel_consumption=9)
     print(str(v))
-    v.move(10)
+    print(v.move(10))
 
     '''Проверка датакласса Двигатель и Автомобиль'''
     # eng = Engine(volume=3.6, pistons=6)
