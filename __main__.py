@@ -40,9 +40,9 @@ if __name__ == '__main__':
     # v5.start()
     # print(str(v5))
 
-    # v = Vehicle(fuel = 10, fuel_consumption=6)
-    # print(str(v))
-    # v.move(166.6)
+    v = Vehicle(fuel = 100, fuel_consumption=6)
+    print(str(v))
+    v.move(10)
 
     '''Проверка датакласса Двигатель и Автомобиль'''
     # eng = Engine(volume=3.6, pistons=6)
@@ -64,5 +64,5 @@ if __name__ == '__main__':
     # print(p.remove_all_cargo())
     # print(p)
 
-    p2 = Plane(weight=50, fuel=0, fuel_consumption=2, max_cargo=1000.0)
-    print(p2)
+    # p2 = Plane(weight=50, fuel=0, fuel_consumption=2, max_cargo=1000.0)
+    # print(p2)

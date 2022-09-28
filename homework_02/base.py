@@ -9,9 +9,9 @@ class Vehicle(ABC):
     fuel_consumption = 7.0
 
     def __init__(self, weight:float = weight, fuel:float = fuel, fuel_consumption:float = fuel_consumption):
-        self.weight = float(weight)
-        self.fuel = float(fuel)
-        self.fuel_consumption = float(fuel_consumption)
+        self.weight = weight
+        self.fuel = fuel
+        self.fuel_consumption = fuel_consumption
 
     def start(self):
         if self.started == False:
