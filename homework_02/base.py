@@ -21,11 +21,13 @@ class Vehicle(ABC):
                 raise LowFuelError
 
     def move(self, dist: float):
-        if dist * self.fuel_consumption >= self.fuel:
+        if dist * self.fuel_consumption > self.fuel:
             raise NotEnoughFuel
         else:
             # print(self.fuel - dist * self.fuel_consumption)
-            return self.fuel - dist * self.fuel_consumption
+            self.fuel-= dist * self.fuel_consumption
+            #return self.fuel - dist * self.fuel_consumption
+            return self.fuel
 
     def __str__(self):
         return f'{self.__class__.__name__} status: weight={self.weight}; started={self.started}' \

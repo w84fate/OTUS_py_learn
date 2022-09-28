@@ -3,6 +3,10 @@ Pipa M.A.
 2022-09-28
 '''
 
+from faker import Faker
+fake = Faker()
+
+
 from homework_02.exceptions import LowFuelError, NotEnoughFuel, CargoOverload
 from homework_02.base import Vehicle
 from homework_02.engine import Engine
@@ -40,10 +44,14 @@ if __name__ == '__main__':
     # v5.start()
     # print(str(v5))
 
-    v = Vehicle(fuel = 100, fuel_consumption=9)
-    max_distance = v.fuel // v.fuel_consumption
-    print(max_distance)
-    distance = (1, max_distance)
+    v = Vehicle(fuel = 110, fuel_consumption=10)
+    max_distance = 10
+    distance = fake.pyint(3, 9)
+    print(distance)
+    v.fuel=distance * v.fuel_consumption
+    print(v.fuel)
+    print(v.move(distance))
+    print(v.fuel) == 0
 
     '''Проверка датакласса Двигатель и Автомобиль'''
     # eng = Engine(volume=3.6, pistons=6)
