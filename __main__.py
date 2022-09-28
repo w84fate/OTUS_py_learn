@@ -3,8 +3,8 @@ Pipa M.A.
 2022-09-28
 '''
 
-from faker import Faker
-fake = Faker()
+# from faker import Faker
+# fake = Faker()
 
 
 from homework_02.exceptions import LowFuelError, NotEnoughFuel, CargoOverload
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     # print(p.remove_all_cargo())
     # print(p)
 
-    # p2 = Plane(weight=504, fuel=0, fuel_consumption=2, max_cargo=1000.0)
+    # p2 = Plane(weight=504, fuel=50, fuel_consumption=5, max_cargo=1000.0)
     # print(p2)
 
 

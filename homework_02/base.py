@@ -24,9 +24,7 @@ class Vehicle(ABC):
         if dist * self.fuel_consumption > self.fuel:
             raise NotEnoughFuel
         else:
-            # print(self.fuel - dist * self.fuel_consumption)
             self.fuel-= dist * self.fuel_consumption
-            #return self.fuel - dist * self.fuel_consumption
             return self.fuel
 
     def __str__(self):

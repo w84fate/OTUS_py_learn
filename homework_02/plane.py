@@ -8,12 +8,6 @@ class Plane(Vehicle):
     cargo: float = 0.0
     max_cargo: float
 
-    # def __init__(self, weight:float, fuel:float, fuel_consumption:float,  max_cargo:float):
-    #     self.max_cargo = max_cargo
-    #     self.weight = weight
-    #     self.fuel = fuel
-    #     self.fuel_consumption = fuel_consumption
-
     def __init__(self, weight:float, fuel:float , fuel_consumption:float, max_cargo:float):
         super().__init__(weight, fuel, fuel_consumption)
         self.max_cargo = max_cargo

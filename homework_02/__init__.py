@@ -3,7 +3,6 @@
 Классы и модули
 """
 from . import base, car, engine, exceptions, plane
-#import base, car, engine, exceptions, plane
 
 __all__ = [
     "base",
