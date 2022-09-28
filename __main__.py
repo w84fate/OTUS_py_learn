@@ -53,6 +53,7 @@ if __name__ == '__main__':
     # c.set_engine(engine=eng)
     # print(c.engine)
 
+    '''Проверка самолета'''
     # p = Plane(max_cargo=1000.0)
     # print(p)
     # p.load_cargo(50)
@@ -62,3 +63,6 @@ if __name__ == '__main__':
     #
     # print(p.remove_all_cargo())
     # print(p)
+
+    p2 = Plane(weight=50, fuel=0, fuel_consumption=2, max_cargo=1000.0)
+    print(p2)
