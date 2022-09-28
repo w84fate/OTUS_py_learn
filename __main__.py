@@ -44,14 +44,14 @@ if __name__ == '__main__':
     # v5.start()
     # print(str(v5))
 
-    v = Vehicle(fuel = 110, fuel_consumption=10)
-    max_distance = 10
-    distance = fake.pyint(3, 9)
-    print(distance)
-    v.fuel=distance * v.fuel_consumption
-    print(v.fuel)
-    print(v.move(distance))
-    print(v.fuel) == 0
+    # v = Vehicle(fuel = 110, fuel_consumption=10)
+    # max_distance = 10
+    # distance = fake.pyint(3, 9)
+    # print(distance)
+    # v.fuel=distance * v.fuel_consumption
+    # print(v.fuel)
+    # print(v.move(distance))
+    # print(v.fuel) == 0
 
     '''Проверка датакласса Двигатель и Автомобиль'''
     # eng = Engine(volume=3.6, pistons=6)
@@ -73,5 +73,7 @@ if __name__ == '__main__':
     # print(p.remove_all_cargo())
     # print(p)
 
-    # p2 = Plane(weight=50, fuel=0, fuel_consumption=2, max_cargo=1000.0)
+    # p2 = Plane(weight=504, fuel=0, fuel_consumption=2, max_cargo=1000.0)
     # print(p2)
+
+
