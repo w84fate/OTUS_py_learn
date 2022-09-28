@@ -24,7 +24,7 @@ class Vehicle(ABC):
         if dist * self.fuel_consumption > self.fuel:
             raise NotEnoughFuel
         else:
-            print('Remaining fuel: {}'.format(round(self.fuel - dist * self.fuel_consumption, 3)))
+            print('Remaining fuel: {}'.format(self.fuel - dist * self.fuel_consumption))
 
     def __str__(self):
         return f'{self.__class__.__name__} status: weight={self.weight}; started={self.started}' \
