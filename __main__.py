@@ -41,8 +41,9 @@ if __name__ == '__main__':
     # print(str(v5))
 
     v = Vehicle(fuel = 100, fuel_consumption=9)
-    print(str(v))
-    print(v.move(10))
+    max_distance = v.fuel // v.fuel_consumption
+    print(max_distance)
+    distance = (1, max_distance)
 
     '''Проверка датакласса Двигатель и Автомобиль'''
     # eng = Engine(volume=3.6, pistons=6)
