@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # v5.start()
     # print(str(v5))
 
-    v = Vehicle(fuel = 100, fuel_consumption=6)
+    v = Vehicle(fuel = 100, fuel_consumption=9)
     print(str(v))
     v.move(10)
 
